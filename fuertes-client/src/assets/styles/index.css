@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #003087;
+  --color-gold: #F5A623;
+  --color-light: #F5F5F5;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-zinc-900 antialiased;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
