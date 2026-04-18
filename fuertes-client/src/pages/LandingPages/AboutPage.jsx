@@ -1,15 +1,17 @@
 import Button from '../../components/Button';
-import logo from '../../assets/img/nubdexchange_logo.png';
+import coverPhoto from '../../assets/img/nu bulldogs cover photo.jpg';
+import grid1 from '../../assets/img/grid 1.jpg';
+import grid2 from '../../assets/img/grid 2.jpg';
+import grid3 from '../../assets/img/grid 3.jpg';
+import grid4 from '../../assets/img/grid 4.jpg';
 
 const AboutPage = () => {
   return (
     <div className="flex w-full flex-col">
       <section className="bg-light px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-          <div className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
-            <div className="flex min-h-72 items-center justify-center rounded-xl bg-light">
-              <img src={logo} alt="BulldogEx" className="h-32 w-32 rounded-full border-2 border-navy bg-white object-contain" />
-            </div>
+          <div className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
+            <img src={coverPhoto} alt="NU Bulldogs" className="h-full w-full object-cover" />
           </div>
 
           <div>
@@ -20,8 +22,9 @@ const AboutPage = () => {
               A campus shop focused on useful products and simple ordering.
             </h1>
             <p className="mt-4 max-w-lg text-sm leading-7 text-zinc-600 sm:text-base">
-              BulldogEx Shop keeps the low-fidelity layout system while presenting clear
-              product categories, quick actions, and straightforward store information.
+              BulldogEx Shop is the official campus merchandise store of National University.
+              From apparel and accessories to collectibles and drinkware, we bring Bulldogs pride
+              straight to your doorstep with easy ordering and on-campus pickup.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button to="/" variant="primary">
@@ -103,20 +106,20 @@ const AboutPage = () => {
 
           <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm">
             <p className="text-sm font-semibold uppercase tracking-widest text-gold">
-              Category Grid
+              Bulldogs Lookbook
             </p>
-            <div className="mt-5 grid gap-6 sm:grid-cols-2">
-              <div className="flex aspect-square items-center justify-center rounded-xl bg-light">
-                <div className="h-12 w-12 rounded-lg bg-gold/20" />
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              <div className="overflow-hidden rounded-xl">
+                <img src={grid1} alt="NU Apparel Collection" className="aspect-square w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-xl bg-light">
-                <div className="h-12 w-12 rounded-lg bg-gold/20" />
+              <div className="overflow-hidden rounded-xl">
+                <img src={grid2} alt="Wear It Your Way" className="aspect-square w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-xl bg-light">
-                <div className="h-12 w-12 rounded-lg bg-gold/20" />
+              <div className="overflow-hidden rounded-xl">
+                <img src={grid3} alt="Elevate Your Style" className="aspect-square w-full object-cover" />
               </div>
-              <div className="flex aspect-square items-center justify-center rounded-xl bg-light">
-                <div className="h-12 w-12 rounded-lg bg-gold/20" />
+              <div className="overflow-hidden rounded-xl">
+                <img src={grid4} alt="Bulldogs Exchange" className="aspect-square w-full object-cover" />
               </div>
             </div>
             <Button to="/products" className="mt-5">View Products</Button>

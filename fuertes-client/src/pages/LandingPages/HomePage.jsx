@@ -1,5 +1,6 @@
 import Button from '../../components/Button';
 import banner from '../../assets/img/nu_bulldogex_banner.jpg';
+import aboutPhoto from '../../assets/img/about section photo.jpg';
 
 const HomePage = () => {
     return (
@@ -82,8 +83,12 @@ const HomePage = () => {
 
                 <div className="grid gap-6 md:grid-cols-3">
                     <article className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:shadow-lg">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-xl bg-light">
-                            <div className="h-12 w-12 rounded-lg bg-gold/20" />
+                        <div className="overflow-hidden rounded-xl">
+                            <img
+                                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80"
+                                alt="Daily Essentials"
+                                className="aspect-4/3 w-full object-cover"
+                            />
                         </div>
                         <h3 className="mt-4 text-lg font-semibold text-navy">Daily Essentials</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
@@ -93,8 +98,12 @@ const HomePage = () => {
                     </article>
 
                     <article className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:shadow-lg">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-xl bg-light">
-                            <div className="h-12 w-12 rounded-lg bg-gold/20" />
+                        <div className="overflow-hidden rounded-xl">
+                            <img
+                                src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&w=600&q=80"
+                                alt="Study Supplies"
+                                className="aspect-4/3 w-full object-cover"
+                            />
                         </div>
                         <h3 className="mt-4 text-lg font-semibold text-navy">Study Supplies</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
@@ -104,8 +113,12 @@ const HomePage = () => {
                     </article>
 
                     <article className="rounded-2xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:shadow-lg">
-                        <div className="flex aspect-4/3 items-center justify-center rounded-xl bg-light">
-                            <div className="h-12 w-12 rounded-lg bg-gold/20" />
+                        <div className="overflow-hidden rounded-xl">
+                            <img
+                                src={aboutPhoto}
+                                alt="Campus Apparel"
+                                className="aspect-4/3 w-full object-cover"
+                            />
                         </div>
                         <h3 className="mt-4 text-lg font-semibold text-navy">Campus Apparel</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">

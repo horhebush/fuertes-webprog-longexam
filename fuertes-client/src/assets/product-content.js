@@ -1,91 +1,92 @@
+import nuTshirt from './img/nu bulldogs tshirt classic.webp';
+import nuCap from './img/NU Cap.webp';
+import nuLanyard from './img/ph-11134207-7ra0n-md6vhvrhnomm08.jpeg';
+import nuBallerClassic from './img/NU University Baller Classic.webp';
+import nuBallerLimited from './img/NU University Baller Limited Edition.webp';
+import nuTumbler from './img/NU Tumbler.webp';
+import hoodie from './img/Hoodie.webp';
+import nuPlush from './img/nu plush mascot.webp';
+
 const products = [
   {
-    name: 'nu-varsity-hoodie',
-    displayName: 'NU Varsity Hoodie',
+    name: 'nu-bulldogs-tshirt-classic',
+    displayName: 'NU Bulldogs Tshirt Classic',
     description:
-      'A cozy pullover hoodie featuring the National University crest on the chest. Perfect for chilly mornings on campus or late-night study sessions in the library. Made from a premium cotton blend for all-day comfort.',
+      'Rep the Bulldogs in this classic navy tee featuring the iconic NU crest on the front. Made from breathable cotton that keeps you cool during classes and campus hangouts. A must-have staple for every Nationalian\'s wardrobe.',
+    price: 499,
+    category: 'Apparel',
+    stock: 40,
+    image: nuTshirt,
+  },
+  {
+    name: 'nu-cap',
+    displayName: 'NU Cap',
+    description:
+      'An adjustable NU-branded cap in navy with a gold embroidered Bulldogs logo on the front. Perfect for sunny campus walks, outdoor PE sessions, and weekend events. One size fits most with a secure snap-back closure.',
+    price: 350,
+    category: 'Accessories',
+    stock: 30,
+    image: nuCap,
+  },
+  {
+    name: 'nu-id-lace-lanyard',
+    displayName: 'NU ID Lace Lanyard',
+    description:
+      'A premium NU-branded lanyard available in black, navy, and pink colorways with bold "NU" lettering. Comes with a free ID case and a detachable metal clip for your student ID and access cards. Durable enough to last the entire school year.',
+    price: 180,
+    category: 'Accessories',
+    stock: 50,
+    image: nuLanyard,
+  },
+  {
+    name: 'nu-university-baller-classic',
+    displayName: 'NU University Baller Classic',
+    description:
+      'The official NU Bulldogs basketball jersey in the classic navy and gold colorway. Lightweight mesh fabric keeps you cool on and off the court. Show your varsity pride whether you\'re playing intramurals or cheering courtside.',
+    price: 599,
+    category: 'Apparel',
+    stock: 25,
+    image: nuBallerClassic,
+  },
+  {
+    name: 'nu-university-baller-limited-edition',
+    displayName: 'NU University Baller Limited Edition',
+    description:
+      'A limited-edition NU Bulldogs basketball jersey with a special commemorative design. Features premium sublimation printing and reinforced stitching for game-day durability. Grab yours before they sell out — once they\'re gone, they\'re gone.',
+    price: 799,
+    category: 'Apparel',
+    stock: 15,
+    image: nuBallerLimited,
+  },
+  {
+    name: 'nu-tumbler',
+    displayName: 'NU Tumbler',
+    description:
+      'A double-wall insulated tumbler in matte navy featuring the NU Bulldogs seal. Keeps your coffee hot through morning lectures and your water cold during afternoon labs. Leak-proof lid design makes it safe inside your bag.',
+    price: 450,
+    category: 'Drinkware',
+    stock: 35,
+    image: nuTumbler,
+  },
+  {
+    name: 'nu-hoodie',
+    displayName: 'NU Hoodie',
+    description:
+      'A cozy pullover hoodie perfect for chilly mornings on campus and late-night study sessions in the library. Features a soft fleece lining, kangaroo pocket, and the National University emblem embroidered on the chest. Available in navy and gray.',
     price: 1200,
     category: 'Apparel',
     stock: 20,
-    image:
-      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80',
+    image: hoodie,
   },
   {
-    name: 'bulldogs-snapback-cap',
-    displayName: 'Bulldogs Snapback Cap',
+    name: 'nu-plush-mascot',
+    displayName: 'NU Plush Mascot',
     description:
-      'Show your Bulldog pride with this adjustable snapback cap in navy and gold. Features an embroidered NU Bulldogs logo on the front panel. Great for outdoor PE classes, campus events, and weekend hangouts.',
-    price: 450,
-    category: 'Apparel',
-    stock: 35,
-    image:
-      'https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    name: 'campus-canvas-tote',
-    displayName: 'Campus Canvas Tote',
-    description:
-      'A spacious canvas tote bag with the BulldogEx logo screen-printed on the front. Ideal for carrying books, laptops, and essentials between classes. Durable construction that lasts the entire semester and beyond.',
-    price: 380,
-    category: 'Accessories',
-    stock: 40,
-    image:
-      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    name: 'nu-id-lanyard',
-    displayName: 'NU ID Lanyard',
-    description:
-      'A durable woven lanyard in official NU navy and gold colors. Comes with a detachable clip and clear card holder for your student ID and building access cards. A daily campus essential for every Bulldog.',
-    price: 150,
-    category: 'Accessories',
-    stock: 50,
-    image:
-      'https://images.unsplash.com/photo-1611532736597-de2d4265fba3?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    name: 'bulldog-lined-notebook',
-    displayName: 'Bulldog Lined Notebook',
-    description:
-      'A 200-page lined notebook with a soft-touch NU-branded cover in matte navy. Perfect for lecture notes, project planning, and exam reviews. Lay-flat binding keeps pages open while you write.',
-    price: 180,
-    category: 'Stationery',
-    stock: 45,
-    image:
-      'https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    name: 'nu-enamel-pin-set',
-    displayName: 'NU Enamel Pin Set',
-    description:
-      'A collectible set of three enamel pins featuring Bulldog mascot designs in navy, gold, and white. Pin them on your bag, lanyard, or jacket to show school spirit. Each pin has a secure butterfly clutch backing.',
-    price: 220,
-    category: 'Stationery',
-    stock: 30,
-    image:
-      'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    name: 'insulated-steel-tumbler',
-    displayName: 'Insulated Steel Tumbler',
-    description:
-      'A double-wall vacuum-insulated tumbler that keeps drinks cold for 12 hours or hot for 6. The leak-proof lid makes it safe inside your bag between classes. Finished in matte navy with the NU seal.',
-    price: 550,
-    category: 'Drinkware',
-    stock: 25,
-    image:
-      'https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    name: 'bulldogs-phone-case',
-    displayName: 'Bulldogs Phone Case',
-    description:
-      'A slim-fit phone case featuring the NU Bulldogs logo in navy and gold. Provides solid drop protection with a matte-finish polycarbonate shell. Compatible with popular phone models — check size options at pickup.',
-    price: 350,
-    category: 'Accessories',
-    stock: 15,
-    image:
-      'https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=600&q=80',
+      'An adorable plush version of the NU Bulldogs mascot, standing at about 8 inches tall. Perfect for your dorm desk, car dashboard, or as a gift to a fellow Nationalian. Soft, huggable, and packed with school spirit.',
+    price: 650,
+    category: 'Collectibles',
+    stock: 20,
+    image: nuPlush,
   },
 ];
 
